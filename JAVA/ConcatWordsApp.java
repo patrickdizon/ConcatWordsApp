@@ -25,11 +25,11 @@ class ConcatWordsApp {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
         ConcatWordsApp lcwApp = new ConcatWordsApp();
-        long startTime = System.currentTimeMillis();
+        //long startTime = System.currentTimeMillis();
         lcwApp.findLongestConcatenatedWords("words.txt");
-        long stopTime = System.currentTimeMillis();
-        long elapsedTime = stopTime - startTime;
-        System.out.println("runtime:" + elapsedTime );//, stop - start 
+        //long stopTime = System.currentTimeMillis();
+        //long elapsedTime = stopTime - startTime;
+        //System.out.println("runtime:" + elapsedTime/60 );//, stop - start 
         
     }
 

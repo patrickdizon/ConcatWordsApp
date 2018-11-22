@@ -75,7 +75,6 @@ def find_longest_concatenated_words(file):
     with open(file, 'r') as f:
         #set lines to list but filter out empty lines and strip \r\n from the values 
         word_list = list(filter(len, [ l.strip() for l in f.readlines()]))
-        
         #convert to frozenset for faster lookup.
         words_dict = frozenset(word_list)
         
@@ -101,10 +100,7 @@ def find_longest_concatenated_words(file):
         print ('Total Concatenated words is: {0}:'.format(count))
 
 #runs the code
-start = timeit.default_timer()
 find_longest_concatenated_words('words.txt')
-stop = timeit.default_timer()
 
-print ('runtime:', stop - start)
 
     
